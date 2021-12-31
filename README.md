@@ -102,6 +102,28 @@ Address:	205.251.194.5#53
 *** Can't find rtp-aws.org: No answer
 ```
 
+Sometime later when its still not working
+```
+$ nslookup -type=NS rtp-aws.org
+Server:		192.168.86.1
+Address:	192.168.86.1#53
+
+Non-authoritative answer:
+rtp-aws.org	nameserver = ns-1481.awsdns-57.org.
+rtp-aws.org	nameserver = ns-1931.awsdns-49.co.uk.
+rtp-aws.org	nameserver = ns-486.awsdns-60.com.
+rtp-aws.org	nameserver = ns-517.awsdns-00.net.
+
+Authoritative answers can be found from:
+
+```
+
+The fix was to add an A record in route53.  Afterwards, using
+the route53 DNS, it worked.
+
+![img]<imgs/a-record-fix.png>
+
+
 
 ## CloudFront
 
