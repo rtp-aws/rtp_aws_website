@@ -92,6 +92,16 @@ Non-authoritative answer:
 *** Can't find rtp-aws.org: No answer
 ```
 
+Specifying the first aws dns server as the dns server in nslookup gives
+
+```
+Huo-Yang~/progs/rtp_aws_website$ nslookup rtp-aws.org NS-517.AWSDNS-00.NET
+Server:		NS-517.AWSDNS-00.NET
+Address:	205.251.194.5#53
+
+*** Can't find rtp-aws.org: No answer
+```
+
 
 ## CloudFront
 
