@@ -68,19 +68,19 @@ I did this setup twice.  After the second time it still did not work.
 The second time, the name servers were not the same.  In register.com
 I have the following name server entries for Nameservers (DNS).
 
-
+```
 NS-517.AWSDNS-00.NET
 NS-486.AWSDNS-60.COM
 NS-1931.AWSDNS-49.CO.UK
 NS-1481.AWSDNS-57.ORG
-
+```
 In Route 53, I have the following name servers
-
+```
 ns-517.awsdns-00.net.
 ns-486.awsdns-60.com.
 ns-1931.awsdns-49.co.uk.
 ns-1481.awsdns-57.org.
-
+```
 Using nslookup, I don't get a valid response.
 
 ```
