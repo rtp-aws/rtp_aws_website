@@ -187,6 +187,12 @@ In `Default cache behavior->Viewer` select the radio button for `Redirect HTTP t
 
 * click `create distribution`
 
+ASIDE: after this step, I did not do this and it was the source of the problem.
+
+on the details of the `Distribution domain name` there is a fqdn for the 
+cloudfront host.  It says `d2tobmfzz3j5.cloudfront.net` that entry needs
+to be used in route53 to create an A record.  Once that is done, at least the
+route53 dns server resolves to the proper ip address.
 
 
 
