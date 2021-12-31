@@ -64,6 +64,34 @@ remove all block public access if not done by now
 * for each of the four dns servers, add them as custom domains in register.com
 as custom name servers. NOTE: omit the final dot for the name.
 
+I did this setup twice.  After the second time it still did not work.
+The second time, the name servers were not the same.  In register.com
+I have the following name server entries for Nameservers (DNS).
+
+
+NS-517.AWSDNS-00.NET
+NS-486.AWSDNS-60.COM
+NS-1931.AWSDNS-49.CO.UK
+NS-1481.AWSDNS-57.ORG
+
+In Route 53, I have the following name servers
+
+ns-517.awsdns-00.net.
+ns-486.awsdns-60.com.
+ns-1931.awsdns-49.co.uk.
+ns-1481.awsdns-57.org.
+
+Using nslookup, I don't get a valid response.
+
+```
+Huo-Yang~/progs/rtp_aws_website$ nslookup rtp-aws.org
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+Non-authoritative answer:
+*** Can't find rtp-aws.org: No answer
+```
+
 
 ## CloudFront
 

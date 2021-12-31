@@ -105,4 +105,6 @@ dist
 
 # JFD
 *.zip
+*.swp
+
 
