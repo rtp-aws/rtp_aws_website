@@ -121,7 +121,7 @@ Authoritative answers can be found from:
 The fix was to add an A record in route53.  Afterwards, using
 the route53 DNS, it worked.
 
-![img](imgs/a-record-fix.png)
+![www-root/img](imgs/a-record-fix.png)
 
 
 
