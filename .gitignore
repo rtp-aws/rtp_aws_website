@@ -106,5 +106,6 @@ dist
 # JFD
 *.zip
 *.swp
+*.key
 
 
