@@ -1,8 +1,8 @@
 .phony: deploy gitupdate
 
-# these are for gcp.  convert to equivalent aws method
+# aws s3 command for rsync. hopefully exclude can be added twice
 deploy:
-	aws s3 sync www-root/. s3://rtp-aws.org
+	aws s3 sync www-root/. s3://rtp-aws.org --exclude "*.swp" --exclude "*.key"
 
 
 gitupdate:

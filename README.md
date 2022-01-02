@@ -195,6 +195,10 @@ to be used in route53 to create an A record.  Once that is done, at least the
 route53 dns server resolves to the proper ip address.
 
 
+# Linux path
+'''
+file:///home/davis/progs/rtp_aws_website/www-root/index.html
+'''
 
 
 
