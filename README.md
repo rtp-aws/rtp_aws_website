@@ -1,6 +1,6 @@
 # rtp_aws_website
 
-# originally used aws amplify
+# Originally used aws amplify
 I did not take notes.  Retry this agian later.
 
 I thought it would create an s3 bucket behind the scenes but it did not.
@@ -194,7 +194,7 @@ cloudfront host.  It says `d2tobmfzz3j5.cloudfront.net` that entry needs
 to be used in route53 to create an A record.  Once that is done, at least the
 route53 dns server resolves to the proper ip address.
 
-///
+
 
 
 
