@@ -1,6 +1,6 @@
 # rtp_aws_website
 
-# originally used aws amplify
+# Originally used aws amplify
 I did not take notes.  Retry this agian later.
 
 I thought it would create an s3 bucket behind the scenes but it did not.
