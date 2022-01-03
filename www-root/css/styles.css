@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background: #222;
+    background: #232f3e;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
@@ -30,9 +30,13 @@ header::after {
 }
 
 .the_body {
-    background: #F5d6FF;
+    background: #232f3e;
+    color: #FFFFFF;
 }
 
+.the_body >  p > a {
+    color: #FFFFFF;
+}
 .logo {
     float: left;
     padding: 10px 0;
