@@ -107,5 +107,6 @@ dist
 *.zip
 *.swp
 *.key
+.DS_Store
 
 
