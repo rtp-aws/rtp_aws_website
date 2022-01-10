@@ -18,7 +18,7 @@ body {
     padding: 10px 0;
 }
 
-/* this is wrong. It was an attempt at changing the link color
+/* this is weird. It sets the link color all the time
 .the_body >  p > a {
     color: #CCCCFF;
 }
@@ -26,6 +26,16 @@ body {
 
 /* proper way to change link colors */
 /* TODO: rename the_body to the_body_div */
+
+/* give them a default value, before you can dork with the colors */
+.the_body a {
+  /* Specify non-transparent defaults to certain properties,
+     allowing them to be styled with the :visited state */
+  background-color: #232f3e;
+  /*border: 1px solid white;*/
+}
+
+
 /* a unvisited link */
 .the_body a:link {
     color: aquamarine;
