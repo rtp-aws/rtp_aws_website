@@ -167,6 +167,10 @@ only specify the app name in the Domain DNS entry.  Remove the default hostnames
 * Click `Add`, `rek-face` and the test app name is only one given.
 * Click `Save`.  This brings up the bar graph.  Just wait for it to complete.
 
+### SSL
+
+For amplify apps it is done by default.  For the elastic beanstalk apps its noted in the eb_testy repo.  For reference this is
+the guide used https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https-elb.html
 
 
 
