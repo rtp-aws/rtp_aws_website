@@ -74,13 +74,16 @@ NS-486.AWSDNS-60.COM
 NS-1931.AWSDNS-49.CO.UK
 NS-1481.AWSDNS-57.ORG
 ```
+
 In Route 53, I have the following name servers
+
 ```
 ns-517.awsdns-00.net.
 ns-486.awsdns-60.com.
 ns-1931.awsdns-49.co.uk.
 ns-1481.awsdns-57.org.
 ```
+
 Using nslookup, I don't get a valid response.
 
 ```
@@ -103,6 +106,7 @@ Address:	205.251.194.5#53
 ```
 
 Sometime later when its still not working
+
 ```
 $ nslookup -type=NS rtp-aws.org
 Server:		192.168.86.1
@@ -194,6 +198,24 @@ cloudfront host.  It says `d2tobmfzz3j5.cloudfront.net` that entry needs
 to be used in route53 to create an A record.  Once that is done, at least the
 route53 dns server resolves to the proper ip address.
 
+
+### Modifications to allow for the AWS Amplify webapp
+
+I was using the cloud academy webapp created with Amplify and
+when I attempted to modify route53 and cloudfront, the new
+host acrekognition.rtp-aws.org redirected to www.rtp-aws.org
+
+I will try to clean that up.  
+
+Remove some settings from route53.
+
+Here is what it looks like before I start removing things.
+
+![img](my-assets/route53-before.png)
+
+Delete `*.rtp-aws.org`
+
+that still permits rtp-aws.org working, but not the new webapp.
 
 
 
