@@ -9,10 +9,17 @@ list_docs:
 
 
 
-gitupdate:
-	git add .; git commit -m "update docs dir"; git push
+gitupdate: clean
+	git add .; git commit -m "update www-root dir"; git push
 
 clean:
 	echo "docs: make clean"
 	#-find . -name "*.backup" -print | xargs rm
 	-rm *.backup *.BACKUP *.swp *.key
+
+
+
+
+# aws s3 command for rsync. hopefully exclude can be added twice
+deploy: clean
+	aws s3 sync . s3://rtp-aws.org --exclude "*.swp" --exclude "*.key"

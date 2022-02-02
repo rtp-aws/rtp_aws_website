@@ -40,7 +40,7 @@ $(SUBCLEAN): %.clean:
 
 
 # aws s3 command for rsync. hopefully exclude can be added twice
-deploy:
+deploy: clean
 	aws s3 sync www-root/. s3://rtp-aws.org --exclude "*.swp" --exclude "*.key"
 
 
