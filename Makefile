@@ -36,13 +36,15 @@ $(SUBCLEAN): %.clean:
 	$(MAKE) -C $* clean
 
 
-
+# list discributions
+list:
+	aws cloudfront list-distributions
 
 
 # aws s3 command for rsync. hopefully exclude can be added twice
 deploy: clean
-	aws s3 sync www-root/. s3://rtp-aws.org --exclude "*.swp" --exclude "*.key"
-
+	aws s3 sync www-root/. s3://rtp-aws.org --exclude "*.swp" --exclude "*.key" --exclude "*.backup" --exclude "*.BACKUP" --exclude "Makefile"
+	aws cloudfront create-invalidation --distribution-id E1USF87Z031C1M --paths "/*"
 
 gitupdate: clean
 	git add --all; git commit -m "wip"; git push
