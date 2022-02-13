@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f9ec0e4c04507c8d1a4c2c81565aba972f06729a
 # notes on gpg usage
 
 These are notes on how to encrypt key files
@@ -117,4 +120,7 @@ gpg --keyserver pgp.mit.edu --search davisjf@gmail.com
 ```
 gpg --output testy.txt.gpg --encrypt --recipient sedrick@10ronline.net --recipient davisjf@gmail.com testy.txt
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> f9ec0e4c04507c8d1a4c2c81565aba972f06729a
